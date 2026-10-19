@@ -35,5 +35,3 @@ def test_name_empty(user,wrong_username,wrong_password):
     assert user["password"]==wrong_password
     assert len(wrong_password)<10
     assert not any(char in wrong_password for char in '!@#%^$&')
-
-
